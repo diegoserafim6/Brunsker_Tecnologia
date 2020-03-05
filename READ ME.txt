@@ -1,0 +1,23 @@
+
+Olá ! 
+
+Para facilitar a interpretação do código escrito segue as orientações :
+
+
+
+* O Site é composto por 3 arquivos principais onde o HTML está escrito ( Cadastrar.php , Login.php e Pesquisar.php)
+* O CSS e o JS estão salvos em uma parte externa (O Bootstrap já está linkado)
+* Para evitar que as imagens referenciadas não sejam localizadas por possíveis alterações futuras as mesmas foram baixadas
+* O arquivo conectabd.php possui a conexão com o banco de dados e todas as funções php
+* O Arquivo Lista_Cadastrados.php tem como função carregar direto do banco todos os dados automaticamente , desta forma , o mesmo contém apenas esta função . Para alterar o que deve ser mostrado ao usuário deve se mudar o arquivo 
+* A validação de dados contém uma linha adicional onde mesmo que o usuário digite os dados incorretamente o acesso será autorizado . Tal permissão foi feita para facilitar a validação do código na linha 42 do arquivo conectabd.php
+* Foram adicionados usuarios fictícios na mostragem de usuarios cadastrados apenas para validação dos campos
+* A pesquisa de cidades é feita através de um arquivo externo . A função está salvo no arquivo js.js
+
+
+O Comando utilizado para criar o banco de dados está descrito abaixo :
+
+
+CREATE TABLE `brunsker`.`usuario` ( `Nome_Completo` TEXT NOT NULL , `CPF` INT(11) NOT NULL , `Apelido` TEXT NOT NULL , `Sexo` TEXT NOT NULL , `E_mail` TEXT NOT NULL , `Telefone_Fixo` INT(10) NOT NULL , `Telefone_Celular` INT(11) NOT NULL , `Estado` INT NOT NULL , `Cidade` INT NOT NULL , `CEP` INT(6) NOT NULL , `Usuario` INT NOT NULL , `Senha` INT NOT NULL ) ENGINE = InnoDB;
+
+

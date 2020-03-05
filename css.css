@@ -1,0 +1,35 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Esta classe é aplicada para que todos os elementos possuam a mesma cor e fonte . Ao alterar todos os elementos do site mudam de cor*/
+.cor {
+background-color: #204f3c;
+color: white
+}
+
+.btn{
+    color: white;
+    text-align: left;
+}
+
+.logo{
+width: 100%;
+}
+
+.list-group-item{
+  margin-top: 10px;  
+}
+/* Cria as regras da imagem do menu lateral */
+.imagem_usuario{
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: 120px;
+}
+
+th{
+    font-size: 15px;
+    background-color: #204f3c;
+color: white
+}
